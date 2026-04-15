@@ -1,0 +1,370 @@
+body {
+    background-color: #ededed;
+    margin: 0;
+}
+
+nav {
+    background-color: #003049;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+header {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.container_nav_logo img {
+    width: 100px;
+}
+
+.container_nav_logo {
+    margin-left: 20px;
+}
+
+.container_nav_menu {
+    display: flex;
+    margin-right: 20px;
+}
+
+.container_nav_menu ul {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    list-style: none;
+}
+
+.container_nav_menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcbf49;
+    padding: 15px;
+    border-radius: 15px;
+    min-width: 200px;
+}
+
+.container_nav_menu a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.container_conteudo_filtros ul {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    list-style: none;
+}
+
+.container_conteudo_filtros li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f77f00;
+    padding: 8px 18px 8px 18px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.container_conteudo_filtros a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 22px;
+}
+
+.container_conteudo_planilha_produto {
+    margin-top: 20px;
+}
+
+.container_conteudo_planilha_produto th,
+.container_planilha_produto_rodape td {
+    background-color: #fcbf49;
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    min-width: 150px;
+    text-align: center;
+}
+
+.container_planilha_produto_dados td,
+.container_planilha_movimentacao_produto_dados td {
+    background-color: #f6e3a2;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.container_planilha_produto_dados a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container_planilha_produto_dados a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.texto_vermelho {
+    color: red;
+    font-weight: bold;
+    font-size: inherit;
+}
+
+.produto_especificacoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+
+.container_produto_especificacoes_imagem img {
+    width: 140px;
+    background-position: center;
+}
+
+.container_produto_especificacoes_imagem {
+    min-width: 300px;
+    padding: 20px;
+    background-color: #fcbf49;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_produto_especificacoes_dados h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.container_produto_especificacoes_dados p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.container_produto_especificacoes_dados span {
+    font-weight: bold;
+}
+
+.container_produto_especificacoes_dados {
+    padding: 20px;
+    background-color: #f6e3a2;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container_produto_especificacoes_botao {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #f77f00;
+    border: 2px solid #f77f00;
+    color: white;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+.container_produto_especificacoes_botao:hover {
+    background-color: #ededed;
+    color: #f77f00;
+    border: 2px solid #f77f00;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*Caixa de cadastro*/
+.cadbox {
+    width: 600px;
+    height: 840px;
+    background-color: #6d8ca9ff;
+    padding: 70px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: 120px auto;
+    box-shadow: 8px 6px 10px rgba(128, 128, 128, 0.555);
+}
+
+/* Titulo aba cadastro */
+
+.titulo_cad {
+    color: white;
+    font-size: 59px;
+}
+
+/*Botão de enviar*/
+.buttoncad2 {
+    font-family: "Outfit", sans-serif;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    background-color: #003049;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.buttoncad2:hover {
+    font-family: "Outfit", sans-serif;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    background-color: #062435;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+/*Formulário*/
+.formcad {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    width: 120%;
+    margin-left: -45px;
+}
+
+.formcad select {
+    padding: 15px;
+    border: 1px solid #003049;
+    border-radius: 15px;
+}
+
+
+.formcad input {
+    padding: 15px;
+    border: 1px solid #003049;
+    background-color: white;
+    color: #000000;
+    border-radius: 15px;
+}
+
+.formcad input:focus {
+    border-color: #f6e3a2;
+    outline: none;
+}
+
+.formcad input::placeholder {
+    color: #9e9a9a;
+}
+
+
+.container_produto_especificacoes_dados input,
+.container_produto_especificacoes_dados select {
+    width: 250px;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid #003049;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+    box-shadow: 2px 3px 5px rgba(128, 128, 128, 0.25);
+}
+
+.container_produto_especificacoes_dados button {
+    margin: 0 auto;
+    padding: 10px;
+    width: 120px;
+    border-radius: 8px;
+    border: 1px solid #003049;
+    background-color: #003049;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+}
+
+.container_produto_especificacoes_dados button:hover {
+    padding: 10px;
+    width: 120px;
+    border-radius: 8px;
+    border: 1px solid #003049;
+    background-color: #ffffff;
+    color: #003049;
+    font-family: 'Noto Sans', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container_produto_especificacoes_text p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.container_produto_especificacoes_dados label {
+    padding: 0;
+    margin: 0;
+}
+
+.container_produto_especificacoes_dados a {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 15px;
+    color: #003049;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: left;
+    text-align: left;
+}
+
+
+.container_produto_especificacoes_texto {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 3000px;
+    text-align: left;
+}

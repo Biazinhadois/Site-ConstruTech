@@ -505,6 +505,7 @@ header {
 }
 
 .titulo_fornecedor {
+    font-family: "Noto Sans", sans-serif ;
     font-size: 35px;
     margin-top: 30px;
     margin-bottom: 25px;
@@ -515,4 +516,12 @@ header {
     color: #003049;
     text-decoration: none;
     font-size: 25px;
+}
+h3{
+     font-family: "Noto Sans", sans-serif ;
+}
+
+.infos{
+     font-family: "Noto Sans", sans-serif ;
+     font-weight: 300px;
 }

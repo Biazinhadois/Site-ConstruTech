@@ -45,33 +45,33 @@ if ($index !== false) {
         <section class="card">
             <h3>Informações Básicas:</h3>
             <div class="grid-info">
-                <div>Nome Fantasia: <?php echo $fornecedor['fornecedor']; ?></div>
-                <div>Razão Social:<?php echo $fornecedor['razao_social']; ?></div>
-                <div>CNPJ: <?php echo $fornecedor['cnpj']; ?></div>
-                <div>Endereço:<?php echo $fornecedor['endereco']; ?></div>
+                <div class="infos">Nome Fantasia: <?php echo $fornecedor['fornecedor']; ?></div>
+                <div  class="infos">Razão Social:<?php echo $fornecedor['razao_social']; ?></div>
+                <div  class="infos">CNPJ: <?php echo $fornecedor['cnpj']; ?></div>
+                <div class="infos">Endereço:<?php echo $fornecedor['endereco']; ?></div>
             </div>
         </section>
         <br>
         <div class="mini-grid">
             <section class="card">
                 <h3>Contato Principal</h3>
-                <p>Vendedor:<?php echo $fornecedor['nome_consultor']; ?> </p>
-                <p>E-mail:<?php echo $fornecedor['email']; ?></p>
+                <p class="infos">Vendedor:<?php echo $fornecedor['nome_consultor']; ?> </p>
+                <p  class="infos">E-mail:<?php echo $fornecedor['email']; ?></p>
             </section>
             <section class="card">
                 <h3>Trocas e Devoluções</h3>
-                <p>Aceitação de trocas / Devolução: <?php echo $fornecedor['troca_devolucao']; ?></p>
+                <p  class="infos">Aceitação de trocas / Devolução: <?php echo $fornecedor['troca_devolucao']; ?></p>
                 <h3>Prazo de Entrega</h3>
-                <p><?php echo $fornecedor['prazo_entrega']; ?></p>
+                <p  class="infos"><?php echo $fornecedor['prazo_entrega']; ?></p>
             </section>
         </div>
 
         <div class="mini-grid">
             <section class="card">
                 <h3>Observações:</h3>
-                <h4>Condição de pagamento:</h4>
+                <h4  class="infos">Condição de pagamento:</h4>
                 <P><?php echo $fornecedor['pagamento_condicacao']; ?></P>
-                <h4>Pedido minimo:</h4>
+                <h4  class="infos">Pedido minimo:</h4>
                 <P><?php echo $fornecedor['pedido_min']; ?></P>
 
             </section>

@@ -1,3 +1,5 @@
+
+
 <?php
 require 'init.php';
 
@@ -59,30 +61,66 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <article class="cadbox">
                 <!--Formulário-->
+<form class="container_fornecedores_especificacoes_dados" 
+      action="cadastrar_produtos.php" 
+      method="POST"
+      enctype="multipart/form-data">
 
-                <form class="formcad" action="cadastrar_produtos.php" method="POST" enctype="multipart/form-data">
+    <h2 class="titulo_cad">Cadastro de Produtos</h2>
 
-                    <h1 class="titulo_cad">Cadastro de Produtos</h1>
+    <div class="form-grid">
 
-                    <input type="text" placeholder="Nome" name="nome" required />
+        <!-- linha 1 -->
+        <div class="input-group">
+            <label for="nome">Nome do Produto</label>
+            <input type="text" id="nome" name="nome" required />
+        </div>
 
-                    <select class="selecionar" name="categoria">
-                        <option value="" disabled selected>Categoria</option>
-                        <option value="bruto">Bruto</option>
-                        <option value="ferramentas">Ferramentas</option>
-                        <option value="acabamento">Acabamento</option>
-                    </select>
-                    <input type="number" placeholder="Quantidade Minima" name="quantidade_minima" required min="1" />
-                    <input type="number" placeholder="Quantidade" name="quantidade_atual" required min="1" />
-                    <input type="text" placeholder="Marca" name="marca" required />
-                    <input type="number" placeholder="Preco Unitário" name="preco_unitario" required min="1" />
-                    <input type="file" name="imagem" accept="image/*" required />
+        <div class="input-group">
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="bruto">Bruto</option>
+                <option value="ferramentas">Ferramentas</option>
+                <option value="acabamento">Acabamento</option>
+            </select>
+        </div>
 
+        <div class="input-group">
+            <label for="quantidade_minima">Qtd. Mínima</label>
+            <input type="number" id="quantidade_minima" name="quantidade_minima" required min="1" />
+        </div>
 
-                    <!--Botão de cadastro-->
-                    <button type="submit" class="buttoncad2" href="#">Envie</button>
+        <!-- linha 2 -->
+        <div class="input-group">
+            <label for="quantidade_atual">Quantidade Atual</label>
+            <input type="number" id="quantidade_atual" name="quantidade_atual" required min="1" />
+        </div>
 
-                </form>
+        <div class="input-group">
+            <label for="marca">Marca</label>
+            <input type="text" id="marca" name="marca" required />
+        </div>
+
+        <div class="input-group">
+            <label for="preco_unitario">Preço Unitário (R$)</label>
+            <input type="number" id="preco_unitario" name="preco_unitario" step="0.01" required min="0" />
+        </div>
+
+        <!-- imagem -->
+        <div class="input-group imagem-box">
+            <label>Imagem do Produto</label>
+
+            <div class="box-imagem">
+                <input type="file" name="imagem">
+            </div>
+        </div>
+
+    </div>
+
+    <button type="submit" class="buttoncad2">Cadastrar Produto</button>
+
+</form>
             </article>
 
         </section>
